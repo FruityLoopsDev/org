@@ -9,48 +9,66 @@ import Footer from "./componentes/Footer";
 
 function App() {
   const [mostrarFormulario, actualizarMostrar] = useState(false);
-  const [colaboradores, actualizarColaboradores] = useState([{
-    id: uuid(),
-    equipo: "Front End",
-    foto: "https://github.com/harlandlohora.png",
-    nombre: "Harland Lohora",
-    puesto: "Instructor",
-    fav: true
-  },
-  {
-    id: uuid(),
-    equipo: "Programación",
-    foto: "https://github.com/genesysrm.png",
-    nombre: "Genesys Rondon",
-    fav: false,
-    puesto: "Desarrolladora de software e instructora"
-  },
-  {
-    id: uuid(),
-    equipo: "UX y Diseño",
-    foto: "https://github.com/JeanmarieAluraLatam.png",
-    nombre: "Jeanmarie Quijada",
-    fav: false,
-    puesto: "Instructora en Alura Latam"
-  },
-  {
-    id: uuid(),
-    equipo: "Programación",
-    foto: "https://github.com/christianpva.png",
-    nombre: "Christian Velasco",
-    fav: false,
-    puesto: "Head de Alura e Instructor"
-  },
-  {
-    id: uuid(),
-    equipo: "Innovación y Gestión",
-    foto: "https://github.com/JoseDarioGonzalezCha.png",
-    nombre: "Jose Gonzalez",
-    fav: false,
-    puesto: "Dev FullStack"
-  }
+  const [colaboradores, actualizarColaboradores] = useState([
+    {
+      id: uuid(),
+      equipo: "Front End",
+      foto: "https://github.com/harlandlohora.png",
+      nombre: "Harland Lohora",
+      puesto: "Instructor",
+      fav: true
+    },
+    {
+      id: uuid(),
+      equipo: "Programación",
+      foto: "https://github.com/genesysrm.png",
+      nombre: "Genesys Rondon",
+      fav: false,
+      puesto: "Desarrolladora de software e instructora"
+    },
+    {
+      id: uuid(),
+      equipo: "UX y Diseño",
+      foto: "https://github.com/JeanmarieAluraLatam.png",
+      nombre: "Jeanmarie Quijada",
+      fav: false,
+      puesto: "Instructora en Alura Latam"
+    },
+    {
+      id: uuid(),
+      equipo: "Programación",
+      foto: "https://github.com/christianpva.png",
+      nombre: "Christian Velasco",
+      fav: false,
+      puesto: "Head de Alura e Instructor"
+    },
+    {
+      id: uuid(),
+      equipo: "Innovación y Gestión",
+      foto: "https://github.com/JoseDarioGonzalezCha.png",
+      nombre: "Jose Gonzalez",
+      fav: false,
+      puesto: "Dev FullStack"
+    },
+    {
+      id: uuid(),
+      equipo: "Front End",
+      foto: "https://github.com/FruityLoopsDev.png",
+      nombre: "Julio C. Fermin",
+      fav: false,
+      puesto: "Programador"
+    },
+    {
+      id: uuid(),
+      equipo: "IT Project Manager",
+      foto: "https://github.com/FruityLoopsDev.png",
+      nombre: "Julio C. Fermin",
+      fav: false,
+      puesto: "Programador"
+    }
   ]);
 
+  //Equipo de ejemplo
   const [equipos, actualizarEquipos] = useState([
     {
       id: uuid(),
@@ -92,6 +110,12 @@ function App() {
       id: uuid(),
       titulo: "Innovación y Gestión",
       colorPrimario: "#FF8A29",
+      colorSecundario: "#FFEEDF",
+    },
+    {
+      id: uuid(),
+      titulo: "IT Project Manager",
+      colorPrimario: "#7449FF",
       colorSecundario: "#FFEEDF",
     }
   ]

@@ -37,7 +37,7 @@ const Equipo = (props) => {
             />)
           }
         </div>
-      </section >
+      </section>
     }</>;
 };
 

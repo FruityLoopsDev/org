@@ -15,7 +15,12 @@ const Footer = () => {
         <a href='https://www.aluracursos.com/'>
             <img src='/img/Logo.png' alt='org' />
         </a>
-        <strong>Desarrollado por Alura</strong>
+        <span>
+            <strong className="copy">Desarrollado por: </strong>
+            <br></br><a href="https://www.linkedin.com/in/cesarcruztrader/">Julio Fermin</a> en Colaboración
+            <br></br>con Harland Lohora by Alura Latam
+        </span>
+
     </footer>;
 };
 export default Footer;
